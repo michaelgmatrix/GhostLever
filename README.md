@@ -1,4 +1,6 @@
-# GhostLever2
+<h1 align="center">
+  <img src="assets/ghostlever-logo.png" alt="GhostLever — More Impact. Less Effort." width="565">
+</h1>
 
 GhostLever2 is a hardware automation solution for locked-down corporate PCs
 where installing workflow software, browser extensions, drivers, or background
