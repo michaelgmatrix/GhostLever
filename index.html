@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <!-- Update this build value for every deployment. The visible stamp is derived from it. -->
-  <meta name="quicktype-build" content="2026-08-04T09:02:34-07:00">
+  <meta name="quicktype-build" content="2026-08-11T14:01:38-07:00">
   <title>GhostLever Configurator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -5136,8 +5136,11 @@
       const keypadMode = appState.configMode === "keypad";
       const managedAndLocked = isManagedCommonRule(mapping) && !appState.sharedSetEditSession;
       const keypadKey = KEYPAD_KEYS.find((key) => key.id === mapping.triggerPattern);
+      const keypadEditorLabel = keypadKey?.id === "KP_PERIOD"
+        ? "Decimal"
+        : (keypadKey?.label || mapping.triggerPattern);
       elements.editorTitle.textContent = keypadMode
-        ? `${keypadKey?.label || mapping.triggerPattern} Key Action`
+        ? `${keypadEditorLabel} Key Action`
         : "Expansion Editor";
       elements.triggerMode.value = mapping.trigger === "key" ? "suffix" : normalizeTriggerMode(mapping.trigger);
       elements.triggerPattern.value = mapping.triggerPattern;
