@@ -2,7 +2,7 @@
   <img src="assets/ghostlever-logo.png" alt="GhostLever — More Impact. Less Effort." width="565">
 </h1>
 
-GhostLever2 is a hardware automation solution for locked-down corporate PCs
+GhostLever is a hardware automation solution for locked-down corporate PCs
 where installing workflow software, browser extensions, drivers, or background
 services is restricted. Built around RP2040 boards, it sits between a USB input
 device and a computer, passes normal input through, and runs saved text
@@ -20,7 +20,7 @@ after the configurator is disconnected.
 
 ## Why a hardware solution?
 
-GhostLever2 presents itself to the target computer as a standard USB HID
+GhostLever presents itself to the target computer as a standard USB HID
 keyboard, Consumer Control device, and mouse. Its rules run on the hardware,
 not on the corporate PC. A device can therefore be configured on a permitted
 system and then provide approved keyboard automation without leaving an
