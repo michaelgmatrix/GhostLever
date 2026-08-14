@@ -104,7 +104,7 @@ Open [`firmware/RTC_Setup/RTC_Setup.ino`](firmware/RTC_Setup/RTC_Setup.ino) and
 flash it to the computer-facing RP2040 board. The current firmware is verified
 with these settings:
 
-- Board profile: Seeed XIAO RP2040
+- Board profile: Waveshare RP2040 Zero
 - USB stack: Adafruit TinyUSB
 - Flash size: 2 MB with a LittleFS partition (256 KB recommended)
 - CPU speed: 240 MHz
