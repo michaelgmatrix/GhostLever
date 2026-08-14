@@ -30,7 +30,7 @@ workstation.
 This design is intended for authorized productivity and accessibility
 workflows. It does not override endpoint controls, and an organization may
 restrict external HID devices. Obtain approval from the employer or IT/security
-team before connecting GhostLever2 to a managed computer, and do not store
+team before connecting GhostLever to a managed computer, and do not store
 passwords, access tokens, or other secrets in expansion rules.
 
 ## Features
@@ -113,12 +113,12 @@ The 240 MHz setting is an RP2040 overclock used by the PIO USB fallback path;
 qualify it on the specific hardware before relying on the device in a critical
 workflow.
 
-### 3. Configure GhostLever2
+### 3. Configure GhostLever
 
 1. Open [`index.html`](index.html) from an HTTPS site or serve the repository on
    `localhost`.
 2. Use Chrome or Edge and select **Connect Device**.
-3. Choose the GhostLever2/RP2040 serial port.
+3. Choose the GhostLever serial port.
 4. Create typed expansions or keypad actions, then write the configuration to
    the device.
 5. Use the Date/Time page to synchronize the DS3231 clock when needed.
