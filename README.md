@@ -2,11 +2,12 @@
   <img src="assets/ghostlever-logo.png" alt="GhostLever — More Impact. Less Effort." width="565">
 </h1>
 
-GhostLever is a hardware automation solution for locked-down corporate PCs
-where installing workflow software, browser extensions, drivers, or background
-services is restricted. Built around RP2040 boards, it sits between a USB input
-device and a computer, passes normal input through, and runs saved text
-expansions, shortcuts, keypad actions, and date/time templates.
+GhostLever is a USB device for locked-down corporate PCs
+where installing software, browser extensions, drivers, or background
+services is blocked. Built around two RP2040 boards, it sits between a USB input
+device and a computer, listening for trigger text and types expansions when it detects it.
+It is like a cross between a macro keypad and text-expansion software with a real time clock
+to allow generating date functions. 
 
 Configuration is handled by the browser-based GhostLever configurator in this
 repository. Rules are saved on the primary board, so they continue to work
@@ -20,11 +21,11 @@ after the configurator is disconnected.
 
 ## Why a hardware solution?
 
-GhostLever presents itself to the target computer as a standard USB HID
-keyboard, Consumer Control device, and mouse. Its rules run on the hardware,
-not on the corporate PC. A device can therefore be configured on a permitted
-system and then provide approved keyboard automation without leaving an
-installed application or background process on the managed workstation.
+GhostLever presents itself to the computer as a standard USB HID
+keyboard. Its rules run on the hardware, not on the corporate PC. A device can 
+therefore be configured on a permitted system and then provide approved keyboard 
+automation without an installed application or background process on the managed 
+workstation.
 
 This design is intended for authorized productivity and accessibility
 workflows. It does not override endpoint controls, and an organization may
